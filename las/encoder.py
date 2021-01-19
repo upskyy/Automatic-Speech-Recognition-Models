@@ -120,15 +120,3 @@ class Encoder(nn.Module):
 
         return rnn_output, rnn_output_prob, output_lens
 
-
-"""
-
-listener = Encoder()
-audio_feature = torch.FloatTensor([1, 2, 3] * 800).view(3, 80, 10)  # (B, D, T)
-output = listener(audio_feature)
-print(output.size())   
-
-
-# torch.Size([3, 10, 512])
-
-"""
