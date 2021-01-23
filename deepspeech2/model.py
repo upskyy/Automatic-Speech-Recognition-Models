@@ -108,21 +108,4 @@ class DeepSpeech2(nn.Module):
         return output
 
 
-"""
-model = DeepSpeech2(input_size, output_size, hidden_size=512, num_layers=5, dropout=0.3, bidirectional=True,
-                    rnn_type='gru')
-input_data =
-output = model(input_data)
-output = output.view(seq_len, batch, -1).contiguous()
-output_lengths = torch.full(size=(batch,), fill_value=seq_len)
-target =
-target_lengths =                  # shape : (batch,)   각 target의 길이를 표현
-learning_rate = 1e-4
-optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
-ctc_loss = nn.CTCloss()
-loss = ctc_loss(output, target, output_lengths, target_lengths)
 
-optimizer.zero_grad()
-loss.backward()
-optimizer.step()
-"""
