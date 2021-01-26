@@ -47,4 +47,4 @@ def train(args, model, device, train_loader, train_sampler, optimizer, epoch, id
         print('Epoch {epoch} : {batch_idx} / {total_idx}\t'
               'CTC loss : {ctc_loss:.4f}\t'
               'loss : {loss:.4f}\t'
-              'cer : {cer:.2f}\t'.format(epoch=epoch, batch_idx=batch_idx, total_idx=len(train_sampler), ctc_loss=loss, loss=cross_entropy_loss, cer=cer))
+              'cer : {cer:.2f}\t'.format(epoch=epoch, batch_idx=batch_idx, total_idx=len(train_sampler), ctc_loss=ctc_loss, loss=cross_entropy_loss, cer=cer))
