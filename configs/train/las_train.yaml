@@ -1,0 +1,24 @@
+# Dataset
+dataset_path: D:/dataset/transcripts.txt
+audio_path: E:/KsponSpeech
+label_path: D:/label/aihub_labels.csv
+model_save_path: las_model.pt
+
+# vocabulary
+num_vocabs: 2001
+pad_id: 0
+sos_id: 1
+eos_id: 2
+blank_id: 2000
+
+# trainer
+batch_size: 4
+num_workers: 4
+epochs: 20
+lr: 1e-06
+print_interval: 10
+
+# System
+cuda: True
+seed: 22
+mode: train

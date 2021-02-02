@@ -1,0 +1,16 @@
+dataset_path: ''
+audio_path: ''
+label_path: D:/label/aihub_labels.csv
+model_path: ''
+save_transcripts_path: ''
+print_interval: 10
+num_vocabs: 2001
+pad_id: 0
+sos_id: 1
+eos_id: 2
+blank_id: 2000
+batch_size: 4
+num_workers: 4
+cuda: True
+seed: 22
+mode: eval
