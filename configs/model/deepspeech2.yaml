@@ -1,7 +1,0 @@
-architecture: deepspeech2
-input_size: 80
-hidden_size: 512
-num_layers: 3
-dropout: 0.3
-bidirectional: True
-rnn_type: gru
