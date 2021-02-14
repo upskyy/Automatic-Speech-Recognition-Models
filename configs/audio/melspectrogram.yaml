@@ -1,5 +1,0 @@
-extension: pcm
-sampling_rate: 16000
-n_mel: 80
-frame_length: 20
-frame_stride: 10
