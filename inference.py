@@ -26,12 +26,12 @@ def parse_audio(audio_path: str, audio_extension: str = 'pcm') -> Tensor:
 
 
 parser = argparse.ArgumentParser(description='inference')
-parser.add_argument('--model_path', type=str, default='C:/Users/cote/PycharmProjects/las/las_model10.pt')
-parser.add_argument('--audio_path', type=str, default='D:/KaiSpeech_eval/KaiSpeech_620001.pcm')
-parser.add_argument('--label_path', type=str, default='D:/label/aihub_labels.csv')
+parser.add_argument('--model_path', type=str, default='')
+parser.add_argument('--audio_path', type=str, default='')
+parser.add_argument('--label_path', type=str, default='')
 parser.add_argument('--eos_id', type=int, default=2)
 parser.add_argument('--blank_id', type=int, default=1999)
-parser.add_argument('--device', action='store_true', default=True, help='flag whether to be possible cuda')
+parser.add_argument('--device', type=bool, default=False)
 args = parser.parse_args()
 
 use_cuda = args.device and torch.cuda.is_available()
