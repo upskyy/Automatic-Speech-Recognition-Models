@@ -79,8 +79,8 @@ class SpectrogramDataset(Dataset, object):
             self.feature_extractor = MelSpectrogram(n_fft, hop_length, sampling_rate, n_dim)
         elif feature_extraction == 'mfcc':
             self.feature_extractor = MFCC(n_fft, hop_length, sampling_rate, n_dim)
-        # elif feature_extraction == 'filterbank':
-        #     self.feature_extractor = FilterBank(frame_length, frame_stride, sampling_rate, n_dim)
+        elif feature_extraction == 'filterbank':
+            self.feature_extractor = FilterBank(frame_length, frame_stride, sampling_rate, n_dim)
 
     def parse_audio(self, path: str) -> torch.FloatTensor:
         sound = load_audio(path, self.extension, self.sampling_rate)
