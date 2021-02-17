@@ -1,2 +1,2 @@
 # Automatic Speech Recognition Models
- End-to-End Speech Recognition models by PyTorch
+ End-to-End Speech Recognition models with PyTorch
