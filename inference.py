@@ -51,11 +51,8 @@ if isinstance(model, nn.DataParallel):
 
 model.eval()
 
-if isinstance(model, ListenAttendSpell):
-    model.encoder.device = device
-    model.decoder.device = device
-
-y_hats = greedy_search(model, feature.unsqueeze(0), input_length, target)
+y_hats = greedy_search(model, feature.unsqueeze(0).to(device), input_length.to(device), target)
+y_hats = y_hats.squeeze(0)
 
 sentence = label_to_string(args.eos_id, args.blank_id, y_hats, id2char)
 
