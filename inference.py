@@ -57,7 +57,6 @@ if isinstance(model, ListenAttendSpell):
 
 y_hats = greedy_search(model, feature.unsqueeze(0), input_length, target)
 
-y_hats = y_hats.squeeze(0)
 sentence = label_to_string(args.eos_id, args.blank_id, y_hats, id2char)
 
 print(sentence)
