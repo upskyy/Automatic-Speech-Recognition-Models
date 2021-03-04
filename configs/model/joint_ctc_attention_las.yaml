@@ -1,0 +1,17 @@
+architecture: las
+input_size: 80
+encoder_hidden_size: 768
+decoder_hidden_size: 1536
+encoder_layers: 3
+decoder_layers: 2
+num_head: 8
+dropout: 0.3
+bidirectional: True
+rnn_type: lstm
+teacher_forcing_ratio: 1.0
+use_joint_ctc_attention: True
+max_len: 120
+attn_mechanism: multi_head
+smoothing: False
+ctc_weight: 0.2
+cross_entropy_weight: 0.8

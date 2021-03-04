@@ -1,0 +1,28 @@
+# Dataset
+dataset_path: D:/dataset/transcripts.txt
+audio_path: E:/KsponSpeech
+label_path: D:/label/aihub_labels.csv
+model_save_path: deepspeech2_model
+train_result_path: C:/Users/cote/PycharmProjects/las/result/train_result
+validation_result_path: C:/Users/cote/PycharmProjects/las/result/validation_result
+
+# vocabulary
+num_vocabs: 2000
+pad_id: 0
+sos_id: 1
+eos_id: 2
+blank_id: 1999
+
+# trainer
+batch_size: 4
+num_workers: 4
+epochs: 70
+lr: 1e-04
+print_interval: 10
+train_save_epoch_interval: 500
+validation_save_epoch_interval: int = 250
+
+# System
+cuda: True
+seed: 22
+mode: train

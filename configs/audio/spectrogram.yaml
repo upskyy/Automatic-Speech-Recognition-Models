@@ -1,0 +1,11 @@
+extension: pcm
+sampling_rate: 16000
+frame_length: 0.020
+frame_stride: 0.010
+n_mel: 0
+feature_extraction: spectrogram
+normalize: False
+spec_augment: True
+num_time_mask: 1
+num_freq_mask: 1
+freq_mask_parameter: 24

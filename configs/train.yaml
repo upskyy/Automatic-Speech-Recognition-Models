@@ -1,0 +1,4 @@
+defaults:
+  - audio: spectrogram
+  - model: joint_ctc_attention_las
+  - train: las_train
