@@ -46,8 +46,7 @@ def validate(
             result = target[:, 1:]
 
             if config.model.architecture == 'las':
-                encoder_output_prob, encoder_output_lens, decoder_output_prob = model(feature, feature_lengths, None,
-                                                                                      0.0)
+                encoder_output_prob, encoder_output_lens, decoder_output_prob = model(feature, feature_lengths, None, 0.0)
 
                 decoder_output_prob = decoder_output_prob.to(device)
                 decoder_output_prob = decoder_output_prob[:, :result.size(1), :]
