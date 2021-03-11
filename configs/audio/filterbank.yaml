@@ -6,6 +6,6 @@ frame_stride: 0.010
 feature_extraction: filterbank
 normalize: True
 spec_augment: True
-num_time_mask: 1
+num_time_mask: 1 
 num_freq_mask: 1
 freq_mask_parameter: 18
