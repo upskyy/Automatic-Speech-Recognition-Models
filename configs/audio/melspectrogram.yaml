@@ -1,6 +1,6 @@
 extension: pcm
 sampling_rate: 16000
-n_mel: 80
+n_mel: 80 
 frame_length: 0.020
 frame_stride: 0.010
 feature_extraction: melspectrogram
