@@ -7,5 +7,5 @@ feature_extraction: spectrogram
 normalize: False
 spec_augment: True
 num_time_mask: 1
-num_freq_mask: 1
+num_freq_mask: 1 
 freq_mask_parameter: 24
