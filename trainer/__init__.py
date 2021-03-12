@@ -11,7 +11,7 @@
 
 from dataclasses import dataclass
 
- 
+
 @dataclass
 class TrainConfig:
     dataset_path: str = 'D:/dataset/transcripts.txt'
