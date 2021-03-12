@@ -20,7 +20,7 @@ epochs: 70
 lr: 1e-04
 print_interval: 10
 train_save_epoch_interval: 500
-validation_save_epoch_interval: 250
+validation_save_epoch_interval: 200
 
 # System
 cuda: True
