@@ -22,7 +22,7 @@ class TrainConfig:
 
     print_interval: int = 10
     train_save_epoch_interval: int = 500
-    validation_save_epoch_interval: int = 250
+    validation_save_epoch_interval: int = 200
 
     num_vocabs: int = 2000
     pad_id: int = 0
