@@ -19,7 +19,7 @@ class FeatureConfig:
     frame_length: float = 0.020
     frame_stride: float = 0.010
     normalize: bool = False
-    spec_augment: bool = True
+    spec_augment: bool = False
     num_time_mask: int = 1
     num_freq_mask: int = 1
 
