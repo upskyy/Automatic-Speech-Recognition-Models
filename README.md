@@ -16,15 +16,15 @@ You can download dataset at [AI-Hub](https://www.aihub.or.kr/aidata/105). Anyone
 ## Usage  
 ### _Training_  
 You can choose from several models and training options.
-- **Deep Speech2** Training
+- **Deep Speech2** _Training
 ```
 python main.py model=deepspeech2 train=deepspeech2_train train.dataset_path=$DATASET_PATH train.audio_path=$AUDIO_PATH train.label_path=$LABEL_PATH
 ```  
-- **Listen, Attend and Spell** Training
+- **Listen, Attend and Spell** _Training
 ```
 python main.py model=las train=las_train train.dataset_path=$DATASET_PATH train.audio_path=$AUDIO_PATH train.label_path=$LABEL_PATH
 ```  
-- **Joint CTC-Attention Listen, Attend and Spell** Training
+- **Joint CTC-Attention Listen, Attend and Spell** _Training
 ```
 python main.py model=joint_ctc_attention_las train=las_train train.dataset_path=$DATASET_PATH train.audio_path=$AUDIO_PATH train.label_path=$LABEL_PATH
 ```  
@@ -36,8 +36,9 @@ python eval.py eval.dataset_path=$DATASET_PATH eval.audio_path=$AUDIO_PATH eval.
 
 
 ## Reference  
-[KoSpeech](https://github.com/sooftware/KoSpeech)  
-[ClovaCall](https://github.com/clovaai/ClovaCall)
+- [IBM/Pytorch-seq2seq](https://github.com/IBM/pytorch-seq2seq)  
+- [KoSpeech](https://github.com/sooftware/KoSpeech)  
+- [ClovaCall](https://github.com/clovaai/ClovaCall)
 
 ## License  
 ```
