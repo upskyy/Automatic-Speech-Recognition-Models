@@ -2,7 +2,6 @@ dataset_path: ''
 audio_path: ''
 label_path: D:/label/aihub_labels.csv
 model_path: ''
-save_transcripts_path: ''
 
 print_interval: 10
 num_vocabs: 2000
