@@ -18,7 +18,6 @@ class EvaluateConfig:
     audio_path: str = ''
     label_path: str = 'D:/label/aihub_labels.csv'
     model_path: str = ''
-    save_transcripts_path: str = ''
     print_interval: int = 10
     num_vocabs: int = 2001
     pad_id: int = 0
