@@ -16,15 +16,15 @@ You can download dataset at [AI-Hub](https://www.aihub.or.kr/aidata/105). Anyone
 ## Usage  
 ### _Training_  
 You can choose from several models and training options.
-- **Deep Speech2** _Training
+- **Deep Speech2** _Training_
 ```
 python main.py model=deepspeech2 train=deepspeech2_train train.dataset_path=$DATASET_PATH train.audio_path=$AUDIO_PATH train.label_path=$LABEL_PATH
 ```  
-- **Listen, Attend and Spell** _Training
+- **Listen, Attend and Spell** _Training_
 ```
 python main.py model=las train=las_train train.dataset_path=$DATASET_PATH train.audio_path=$AUDIO_PATH train.label_path=$LABEL_PATH
 ```  
-- **Joint CTC-Attention Listen, Attend and Spell** _Training
+- **Joint CTC-Attention Listen, Attend and Spell** _Training_
 ```
 python main.py model=joint_ctc_attention_las train=las_train train.dataset_path=$DATASET_PATH train.audio_path=$AUDIO_PATH train.label_path=$LABEL_PATH
 ```  
