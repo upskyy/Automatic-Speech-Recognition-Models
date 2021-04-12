@@ -40,6 +40,9 @@ python eval.py eval.dataset_path=$DATASET_PATH eval.audio_path=$AUDIO_PATH eval.
 - [KoSpeech](https://github.com/sooftware/KoSpeech)  
 - [ClovaCall](https://github.com/clovaai/ClovaCall)
 
+## Author
+- seomk9896@naver.com  
+
 ## License  
 ```
 # MIT License
