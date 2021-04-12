@@ -9,6 +9,7 @@
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
 
+import os
 import torch
 import torch.nn as nn
 import pandas as pd
@@ -72,6 +73,4 @@ class Evaluator(object):
                     print('cer: {:.2f}'.format(cer))
 
         inference_result = pd.DataFrame(inference_result)
-        inference_result.to_csv(self.config.eval.save_transcripts_path, index=False, encoding='cp949')
-
-
+        inference_result.to_csv(os.path.join(os.getcwd(), 'inference_result.csv') , index=False, encoding='cp949')
