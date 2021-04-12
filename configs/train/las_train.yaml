@@ -3,8 +3,8 @@ dataset_path: D:/dataset/transcripts.txt
 audio_path: E:/KsponSpeech
 label_path: D:/label/aihub_labels.csv
 model_save_path: las_model
-train_result_path: C:/Users/cote/PycharmProjects/las/result/train_result
-validation_result_path: C:/Users/cote/PycharmProjects/las/result/validation_result
+train_result_path: ./result/train_result
+validation_result_path: ./result/validation_result
 
 # vocabulary 
 num_vocabs: 2000
