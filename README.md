@@ -14,7 +14,7 @@ You can download dataset at [AI-Hub](https://www.aihub.or.kr/aidata/105). Anyone
 
 
 ## Usage  
-### _Training_  
+### - _Training_  
 You can choose from several models and training options.
 - **Deep Speech2** _Training_
 ```
@@ -28,7 +28,7 @@ python main.py model=las train=las_train train.dataset_path=$DATASET_PATH train.
 ```
 python main.py model=joint_ctc_attention_las train=las_train train.dataset_path=$DATASET_PATH train.audio_path=$AUDIO_PATH train.label_path=$LABEL_PATH
 ```  
-### _Evaluation_
+### - _Evaluation_
 ```
 python eval.py eval.dataset_path=$DATASET_PATH eval.audio_path=$AUDIO_PATH eval.label_path=$LABEL_PATH eval.model_path=$MODEL_PATH
 ```  
