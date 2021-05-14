@@ -18,7 +18,12 @@ You can download dataset at [AI-Hub](https://www.aihub.or.kr/aidata/105). Anyone
 You can choose from several models and training options.
 - **Deep Speech2** _Training_
 ```
-python main.py model=deepspeech2 train=deepspeech2_train train.dataset_path=$DATASET_PATH train.audio_path=$AUDIO_PATH train.label_path=$LABEL_PATH
+python main.py \
+  model=deepspeech2 \
+  train=deepspeech2_train \
+  train.dataset_path=$DATASET_PATH \
+  train.audio_path=$AUDIO_PATH \
+  train.label_path=$LABEL_PATH
 ```  
 - **Listen, Attend and Spell** _Training_
 ```
