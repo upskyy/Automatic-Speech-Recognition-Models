@@ -18,7 +18,7 @@ You can download dataset at [AI-Hub](https://www.aihub.or.kr/aidata/105). Anyone
 You can choose from several models and training options.
 - **Deep Speech2** _Training_
 ```
-python main.py \
+$ python main.py \
     model=deepspeech2 \
     train=deepspeech2_train \
     train.dataset_path=$DATASET_PATH \
@@ -27,7 +27,7 @@ python main.py \
 ```  
 - **Listen, Attend and Spell** _Training_
 ```
-python main.py \
+$ python main.py \
     model=las train=las_train \
     train.dataset_path=$DATASET_PATH \
     train.audio_path=$AUDIO_PATH \
@@ -35,7 +35,7 @@ python main.py \
 ```  
 - **Joint CTC-Attention Listen, Attend and Spell** _Training_
 ```
-python main.py \
+$ python main.py \
     model=joint_ctc_attention_las \
     train=las_train \
     train.dataset_path=$DATASET_PATH \
@@ -44,7 +44,7 @@ python main.py \
 ```  
 ### - _Evaluation_
 ```
-python eval.py \
+$ python eval.py \
     eval.dataset_path=$DATASET_PATH \
     eval.audio_path=$AUDIO_PATH \
     eval.label_path=$LABEL_PATH \
