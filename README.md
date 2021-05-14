@@ -22,15 +22,28 @@ python main.py model=deepspeech2 train=deepspeech2_train train.dataset_path=$DAT
 ```  
 - **Listen, Attend and Spell** _Training_
 ```
-python main.py model=las train=las_train train.dataset_path=$DATASET_PATH train.audio_path=$AUDIO_PATH train.label_path=$LABEL_PATH
+python main.py \
+  model=las train=las_train \
+  train.dataset_path=$DATASET_PATH \
+  train.audio_path=$AUDIO_PATH \
+  train.label_path=$LABEL_PATH
 ```  
 - **Joint CTC-Attention Listen, Attend and Spell** _Training_
 ```
-python main.py model=joint_ctc_attention_las train=las_train train.dataset_path=$DATASET_PATH train.audio_path=$AUDIO_PATH train.label_path=$LABEL_PATH
+python main.py \
+  model=joint_ctc_attention_las \
+  train=las_train \
+  train.dataset_path=$DATASET_PATH \
+  train.audio_path=$AUDIO_PATH \
+  train.label_path=$LABEL_PATH
 ```  
 ### - _Evaluation_
 ```
-python eval.py eval.dataset_path=$DATASET_PATH eval.audio_path=$AUDIO_PATH eval.label_path=$LABEL_PATH eval.model_path=$MODEL_PATH
+python eval.py \
+  eval.dataset_path=$DATASET_PATH \
+  eval.audio_path=$AUDIO_PATH \
+  eval.label_path=$LABEL_PATH \
+  eval.model_path=$MODEL_PATH
 ```  
 
 
