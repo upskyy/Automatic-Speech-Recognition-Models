@@ -167,7 +167,7 @@ class Encoder(nn.Module):
         batch, seq_len, num_channels, hidden_size = conv_output.size()
         conv_output = conv_output.contiguous().view(batch, seq_len, -1)  # (B, T, C * D)
 
-        conv_output = pack_padded_sequence(conv_output, output_lens, batch_first=True)
+        conv_output = pack_padded_sequence(conv_output, output_lens.cpu(), batch_first=True)
         rnn_output, _ = self.rnn(conv_output)
         rnn_output, _ = pad_packed_sequence(rnn_output, batch_first=True)
 
