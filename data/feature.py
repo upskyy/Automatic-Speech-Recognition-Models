@@ -96,7 +96,7 @@ class MFCC(object):
         return torch.FloatTensor(mfcc)
 
 
-class FilterBank:
+class FilterBank(object):
     def __init__(
             self,
             frame_length: float = 0.020,
