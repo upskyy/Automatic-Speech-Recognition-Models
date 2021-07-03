@@ -158,6 +158,9 @@ class Encoder(nn.Module):
             **rnn_output_prob** (Tensor): ``(batch, seq_length, num_vocabs)`` if use_joint_ctc_attention is False, return None.
             **output_lens** (Tensor): ``(batch)``
         """
+        if self.training:
+            self.rnn.flatten_parameters()
+            
         rnn_output_prob = None
 
         inputs = inputs.unsqueeze(1)
