@@ -142,6 +142,9 @@ class Decoder(nn.Module):
         Returns:
             **decoder_output_prob** (Tensor): ``(batch, seq_length, num_vocabs)``
         """
+        if self.training:
+            self.rnn.flatten_parameters()
+            
         attn_distribution = None
         decoder_output_prob = list()
 
