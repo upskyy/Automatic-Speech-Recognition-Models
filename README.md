@@ -59,7 +59,7 @@ $ python eval.py \
 - [ClovaCall](https://github.com/clovaai/ClovaCall)
 
 ## Author
-- seomk9896@naver.com  
+- seomk9896@gmail.com  
 
 ## License  
 ```
